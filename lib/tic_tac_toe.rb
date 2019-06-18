@@ -101,9 +101,9 @@ class TicTacToe
   
   def play
     turn
-    until over?
-     turn
-    end
+    # until over?
+    # turn
+    # end
   end
   
 end
