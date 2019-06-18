@@ -101,7 +101,10 @@ class TicTacToe
   
   def play
     turn
-    over?
+    until over?
+     turn
+    end
+    winner
   end
   
 end
