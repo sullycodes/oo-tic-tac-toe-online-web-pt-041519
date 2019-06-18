@@ -90,7 +90,7 @@ class TicTacToe
   end
   
   def winner
-    if !self.current_player == "O" && self.won?
+    if self.won? && self.current_player == "X"
       return "X"
     elsif self.won? && self.current_player == "O"
       return "O"
