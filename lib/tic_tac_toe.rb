@@ -44,7 +44,6 @@ class TicTacToe
     index.between?(0,8) && @board[index] == " "
   end
  
-  #use self when calling a method inside another method
   def turn
     puts "What is your move? Enter 1-9."
     answer = gets.chomp
@@ -91,7 +90,7 @@ class TicTacToe
   end
   
   def winner
-    if self.won? == "X"
+    if self.won? && self.current_player == "X"
       return "X"
     else
       return "O"
