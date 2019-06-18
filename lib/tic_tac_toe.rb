@@ -90,8 +90,12 @@ class TicTacToe
   end
   
   def winner
-    if self.won? && self.current_player == "X"
-      return "X"
+    WIN_COMBINATIONS.each do |combo| 
+      board_elements = combo.map{ |index| @board[index] }
+      if board_elements.all? { |e| e == "X" } || board_elements.all? { |e| e == "O" }
+        return combo
+    # if self.won? && self.current_player == "X"
+    #   return "X"
     elsif self.won? && self.current_player == "O"
       return "O"
     else
