@@ -103,7 +103,7 @@ class TicTacToe
     until over?
       turn
     end
-      puts "Congratulations"
+      puts "Congratulations #{winner}!"
   end
   
 end
