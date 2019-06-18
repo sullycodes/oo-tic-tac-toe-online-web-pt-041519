@@ -83,6 +83,7 @@ class TicTacToe
   end
   
   def over?
+    binding.pry
     if @board.won? == true || @board.draw? == true || @board.full?
       true
     else
