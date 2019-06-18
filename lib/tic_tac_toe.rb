@@ -103,6 +103,7 @@ class TicTacToe
     until over?
       turn
     end
+      puts "Congratulations"
   end
   
 end
