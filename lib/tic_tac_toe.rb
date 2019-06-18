@@ -104,7 +104,6 @@ class TicTacToe
     until over?
      turn
     end
-    winner
   end
   
 end
