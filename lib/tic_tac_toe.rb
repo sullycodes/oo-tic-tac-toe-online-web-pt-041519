@@ -96,10 +96,11 @@ class TicTacToe
         return "X"
     # if self.won? && self.current_player == "X"
     #   return "X"
-    elsif self.won? && self.current_player == "O"
-      return "O"
-    else
-      return nil
+      elsif self.won? && self.current_player == "O"
+        return "O"
+      else
+        return nil
+      end
     end
   end
   
