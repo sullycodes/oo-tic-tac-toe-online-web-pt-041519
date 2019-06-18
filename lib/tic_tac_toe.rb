@@ -101,7 +101,7 @@ class TicTacToe
   
   def play
     turn
-    self.over?
+    over?
   end
   
 end
