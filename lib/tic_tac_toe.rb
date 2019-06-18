@@ -83,7 +83,7 @@ class TicTacToe
   end
   
   def over?
-    if self.won? == true || @board.draw? == true
+    won? || draw?
       true
     else
       false
